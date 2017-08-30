@@ -5,11 +5,12 @@ using UnityEngine;
 public class Fish : Animal {
 
     void Swim () {
-    print(this.name + " swims");
+    print(this.name + " Swims");
     }
 
-    void Start(){
-    Swim ();
+    public override void Start() {
+        base.Start();
+        Swim();
     }
 
 }

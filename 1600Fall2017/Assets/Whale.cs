@@ -4,4 +4,13 @@ using UnityEngine;
 
 public class Whale : Mammal {
 
+    public override void Start() {
+        base.Start();
+        Beaches();
+    }
+
+    void Beaches () {
+        print(this.name + " Beaches");
+    }
+
 }
