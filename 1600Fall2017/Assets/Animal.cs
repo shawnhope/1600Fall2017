@@ -10,7 +10,8 @@ public class Animal : MonoBehaviour {
 			Eat();
 			Sleep();
 	}
-	
+		/*this is a comment for an assignment
+		this is a second line of a comment */
 	void Die () {
 		print(this.name + " Died");
 	}	
