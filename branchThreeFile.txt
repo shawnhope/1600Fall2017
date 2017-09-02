@@ -1,3 +1,6 @@
 branchThreeFile
 //first commit comment
 made branchThree off of branchOne, so shouldn't have branchTwoFile, right?
+
+//technically third commit comment
+should be a good example for which it rewrites when I merge..
