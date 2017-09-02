@@ -1,2 +1,5 @@
 //first commit
 branchTwoFile in branchOne branch oH SHATzki
+
+//second commit comment
+Wondering why its not showing a (visual) branch in Kraken like it was in class earlier; hmm, it IS branched, I'm fairly sure..
