@@ -4,3 +4,5 @@ made branchThree off of branchOne, so shouldn't have branchTwoFile, right?
 
 //second commit comment
 Noticed the visual branching in Kraken after adding branchThreeFile, still mildly confused.
+//technically third commit comment
+should be a good example for which it rewrites when I merge..
