@@ -1,0 +1,3 @@
+GitFlow Feature 3.3
+
+Made new file in sub sub feature branch; 1st commit before merge into first branch
