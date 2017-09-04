@@ -3,3 +3,5 @@ GitFlow Features
 Made 3rd Branch, using txt file this time to see how to resolve conflicts; 1st Commit.
 
 2nd Commit
+
+finished sub sub, conflicted this file in sub, conflicting sub now; 1st rewrite
