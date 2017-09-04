@@ -7,3 +7,5 @@ Made 3rd Branch, using txt file this time to see how to resolve conflicts; 1st C
 Made sub branch in 3rdFeature, like 1stFeature; 1st Commit
 
 2nd Commit
+
+Made sub sub branch in 3rd to be cheeky; 1st Commit
