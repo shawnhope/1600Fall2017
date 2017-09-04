@@ -7,3 +7,5 @@ Made 3rd Branch, using txt file this time to see how to resolve conflicts; 1st C
 Made sub branch in 3rdFeature, like 1stFeature; 1st Commit
 
 2nd Commit
+
+Merged sub sub to dev branch?? Editing in sub to see conflicts; 1st rewrite
