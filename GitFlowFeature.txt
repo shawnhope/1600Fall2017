@@ -1,0 +1,3 @@
+GitFlow Features
+
+Made 3rd Branch, using txt file this time to see how to resolve conflicts; 1st Commit.
