@@ -11,3 +11,5 @@ Made sub branch in 3rdFeature, like 1stFeature; 1st Commit
 Made sub sub branch in 3rd to be cheeky; 1st Commit
 
 2nd Commit
+
+finished sub sub, conflicted this file in sub, conflicting sub now; 1st rewrite
