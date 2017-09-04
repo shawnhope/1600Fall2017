@@ -1,6 +1,6 @@
 Variables
 
-Variables are types that have been assigned an identifier or value so that they can be recalled later for functions (and methods and statements?). They're closed with semicolons. Values can be stated immediately or later.
+Variables are types that have been assigned an identifier or value so that they can be recalled later for functions (and methods and statements?). They're closed with semicolons. Values can be stated immediately or later, and values can be changed or unchangable depending on if used as Value type or Reference?
 
 	int slice = 4;			//variables
 	var pi = 3.14;
