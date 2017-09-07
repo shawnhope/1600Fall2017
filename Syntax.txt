@@ -1,0 +1,23 @@
+Conventions and Syntax
+
+Syntax is the format of the c# language; its the order that certain things have to be written and blocked out.
+
+//always starts with using
+usint System;
+using UnityEngine;
+
+//class declaration, private or public depending on if you want it used elsewhere
+public class Syntax 
+{
+
+		//variables; semicolons to differenciate
+		int myNumber = 2;
+		var myOtherNum = 4;	
+
+	/*Method(?); always needs a start, void doesn't return anything, no semicolon because it hasn't got a block to run anything yet*/
+	void Start () {
+		//Funtion?(parameters);
+		print(myNumber + myOtherNum);
+			}
+			//always close curlies
+}
