@@ -1,0 +1,41 @@
+Math Operators
+
+Math operators in c# are just math symbols -+*/ == -= += != <> >= <= etc
+
+
+//blah blah stuff
+
+public class MathOperators{
+
+	int numOne = 1;
+	int numTwo = 2;
+	int numThree = 3;
+	int numFour = 4;
+	int numFive = 5;
+	int solution;
+
+	void Start (){
+
+		print(numOne + numFour);	//prints 5, operator + is addition
+		print(numThree - numTwo);	//1, - is subtraction
+		print(numFour / numTwo);	//2, / division
+		print(numFive * numThree);	//15, multiplication
+		print(solution = numFive -=);	//4? subtracts by one
+		print(solution = numOne +=);	//2? adds one
+		numOne = 1;
+		print(++numOne);		//2 increments 1 before its written
+		numOne = 1;			//restablish as 1
+		print(numOne++);		//1 prints before increment
+		print(numOne);			//2
+		{
+	
+	if(numOne < numThree) 			//less than
+		if (numOne < numTwo){	
+			print("sure is")
+		}
+		else
+		{
+			print("naah")		
+		}
+
+}	
