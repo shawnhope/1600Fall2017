@@ -1,0 +1,103 @@
+//---------------------------1
+int solution;
+
+if (1 == 1)
+ {
+ solution = "true";
+ print(solution);
+ }
+else
+ {
+ solution = "false";
+ print(solution);
+ }
+//---------------------------2
+int yup = 8;
+int uhuh = 2;
+int iGuess = 10;
+
+if (yup + uhuh == iGuess)
+ {
+ print("whatever");
+ }
+//---------------------------3
+int @5 = 4;
+
+if (5 == 4)
+ {
+ print("how did..");
+ }
+//---------------------------4
+string input;
+string password;
+bool = true;
+
+if (input == password)
+ {
+ print("how did you know-!");
+ }
+//---------------------------5
+int number = 100
+
+if (number < 2)
+ {
+ number +=;
+ }
+else if (number > 50) //I dont even know
+ {
+ number -=
+ }
+//---------------------------6
+int clock;
+
+if (clock == 2)
+ {
+ clock = 3;
+ }
+else if (clock == 3) 
+ {
+ clock = 4;
+ }
+//---------------------------7
+int answer;
+
+
+if (answer == 4)
+ {
+ answer + 3;
+ }
+else (answer == 7)
+ {
+ answer + 1;
+ }
+else (answer == 8)
+ {
+ answer + 5;
+ print("stop already");
+ }
+//---------------------------8
+int score;
+
+if(score < 85);
+ {
+ print("you passed");
+ }
+//---------------------------9
+int age;
+
+if (age > 20){
+ if (age > 40){
+  print("hahoo oh wow ok");
+ }
+else
+ {
+ print("gettin old")
+ }
+//---------------------------10
+int num1 = 2 + 3;
+int num2 = 8 - 6;
+
+if (num1 > num2)
+ {
+ print("maths.")
+ }
