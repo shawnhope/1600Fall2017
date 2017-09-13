@@ -1,0 +1,100 @@
+Else Statements
+
+if(poisoned)
+	{
+	health -=.02f;
+	}
+else
+	{
+	print("Not Poisoned");
+	}
+//------------------------------------------------
+if(health < 10)
+	{
+	print("Gonna die soon-!");
+	}
+else
+	{
+	print("..it's just a scratch");
+	}
+//------------------------------------------------
+if(gold > 50)
+	{
+	print("Deal!");
+	}
+else if(gold < 5)
+	{
+	print("No Deal, Howie");
+	}
+//-------------------------------------------------
+if(year > 2000)
+	{
+	print("no one cares");
+	}
+else
+	{
+	print("only 90s kids kno--");
+	}
+//-------------------------------------------------
+if(door == open)
+	{
+	print("Good thing I remember how to use doorhandles");
+	}
+else
+	{
+	print("Oh no, I've forgotten how to use doorhandles");
+	}
+//-------------------------------------------------
+if(tooSexy)
+	{
+	-=myShirt;
+	}
+else
+	{
+	-=myCat;
+	}
+//-------------------------------------------------
+if(anyoneGetsMyReferences)
+	{
+	print("thank god");
+	}
+else
+	{
+	print("eh, what's new");
+	}
+//-------------------------------------------------
+if(onEigthExample)
+	{
+	print("two more for points");
+	}
+else if(onNinthExample)
+	{
+	print("one more");
+	}
+else if(onTenthExample)
+	{
+	print("done");
+	}
+else
+	{
+	print("got like at least a million left");
+	}
+//--------------------------------------------------
+if(iKnewMoreUsefulUnityCode)
+	{
+	print("I would be able to make more interesting things than just printing..");
+	}
+else
+	{
+	print("would you look at that another example using print");
+	}
+//-------------------------------------------------
+int num = 24
+if(num > 12)
+	{
+	-=1
+	}
+else
+	{
+	print(num " is something that equals twelve")
+	}
