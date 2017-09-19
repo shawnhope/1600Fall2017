@@ -1,0 +1,170 @@
+Switch Statements
+"Like if Statements but better" -Romrell 2017.  Checks for values instead of turth/false.
+
+switch(weapon)
+{
+case 1:
+	print("Sword");
+	break;
+case 2:
+	print("Shield");
+	break;
+case 3:
+	print("Rubber Chicken");
+	break;
+default:
+	print("You have nothing equipped");
+	break;
+}
+//------------------------------------------
+int key = 2;
+switch(key)
+{
+case 1:
+	print("You unlock the door and fall into a pit of spikes");
+	break;
+case 2: 
+	print("You unlock the door and find Tim Burton trying to make another Alice movie");
+	break;
+default:
+	print("This door doesn't like the taste of this key");
+	break;
+}
+//--------------------------------------------
+int shark = 1;
+switch(shark)
+{
+case 1:
+	print("Oh crap it's a shark!");
+	break;
+case 2:
+	print("Oh crap it's not a shark, but you're under water for some reason and going to drown!");
+	break;
+default:
+	print("You didn't do anything and drowned");
+	break;
+}
+//------------------------------------------------
+int answer = 5;
+switch(answer)
+{
+case 1: 
+	print("Nope, this is a one");
+	break;
+case 2:
+	print("Almost there");
+	break;
+case 3:
+	print("Are you even trying at this point");
+	break;
+case 4:
+	print("You're either close intentionally or an neanderthal");
+	break;
+case 5:
+	print("That's right, five! Five, empty whisky bottles on your apartment floor! A-ah-ah");
+	break;
+default:
+	print("Take a shot every time you see this");
+	break;
+}
+//------------------------------------------------------
+if (num <= 4)
+{
+switch(num)
+	{
+	case 1:
+		num + 3;	
+		break;
+	case 2:
+		num + 2;
+		break;
+	case 3:
+		num + 1;
+		break;
+	default:
+		num = 4;
+		break;
+	}
+else
+	{
+	num = 5;
+	print("Five is the most you can whatever");
+	}
+}
+//-----------------------------------------------------
+switch(input)
+{
+case 1:
+	print("You ask for just one.");
+	break;
+case 2:
+	print("You ask for two.");
+	break;
+}
+//------------------------------------------------------
+switch(howManyFingersAmIHoldingUp)
+{
+case 1:
+	print("Yeah, he's fine");
+	break;
+case 2:
+	print("He's probably fine");
+	break;
+default:
+	print("His eyes aren't even open dude");
+	break;
+}
+//-------------------------------------------------------
+int potsOfCoffeeConsumed = 6;
+switch(potsOfCoffeeConsumed)
+{
+case 1:
+	print("Fresh pot.");
+	break;
+case 3:
+	print("I can stop any time I want");
+	break;
+case 5:
+	print("Starbucks ain't got nothin' on me");
+	break;
+case 6:
+	print("FRESH POOTT!");
+	break;
+}
+//----------------------------------------------------------
+int switchStates = 9;
+switch(switchStates)
+{
+case 1:
+	print("just gettin' started");
+	break;
+case 8:
+	print("time to start making obscure references to things people don't know because I'm tired");
+	break;
+case 9:
+	print("here's to the meta statement about this statement");
+	break;
+case 10:
+	print("donE! But Romrell has scared me into thinking that's not enough, so maybe I'll add more later, but for now.. just for points this be done-zo");
+	break;
+default:
+	print("student fell asleep on keyboard");
+	break;
+}
+//----------------------------------------------------------
+int maxInv;
+switch(maxInv)
+{
+case 1:
+	print("slot 1");
+	break;
+case 2:
+	print("slot 2");
+	break;
+case 3:
+	print("slot 3");
+	break;
+default:
+	print("Inventory is full");
+	break;
+}
