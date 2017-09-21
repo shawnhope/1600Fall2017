@@ -1,10 +1,65 @@
 Arrays
 a way to make a collection of containers
 
-int[] num = 3, 4, 2, 1
+//-------------------------------------------------1
+int[] num = {3, 4, 2, 1};
 
 Start()
 {
 	print(num[3] " is equal to " num[1] "-" num[0])
 }
-//------------------------------will finish in morning, i need to watch tutorials
+//-------------------------------------------------2
+char[] vowels = {a, e, i, o, u};
+
+for(i = 0; i < vowels.Length; i++)
+{
+	print(vowel[i]);
+	//'aeiou' right? or would it need to be +i+
+}
+//-------------------------------------------------3
+int[] zeros;
+print(zeros[92384]);
+//-------------------------------------------------4
+string[] word = {getting, think, hang, I'm, I, the, this, of};
+
+print(word[4] PadRight word[1] PadRight word[3] PadRight word[0] PadRight word[5] PadRight word[2] PadRight word[7] PadRight word[6]" ?");
+//-------------------------------------------------5
+char[] letter = {d, c, e, b, f, a};
+
+letter.Sort();
+print(letter);
+//'abcedf' unless you have to include something else to print the string?
+//-------------------------------------------------6
+float[5] num = {2.1, 6.3, 4.4, 8.9};
+print(num[4]);
+//0?
+//-------------------------------------------------7
+string[] word;
+
+word[1] = hello;
+word[2] = world;
+print(word[1]" "word[2]);
+//-------------------------------------------------8
+string[] words = {A sentence;};
+
+if(i = 0; i < words; i++)
+	{
+	input = Add.words[i]
+	}
+//trying to figure something out
+//-------------------------------------------------9
+int[] num = {1; 2; 3; 4; 5;};
+print(num[1]+num[4]-num[2]-num[3]+num[5]);
+//5
+//-------------------------------------------------10
+int[] equip = {1; 2; 3;};
+switch(equip)
+{
+case [1]:
+	shield
+case [2]:
+	sword
+case [3]:
+	gun
+}
+//is this a thing??
