@@ -1,0 +1,10 @@
+Arrays
+a way to make a collection of containers
+
+int[] num = 3, 4, 2, 1
+
+Start()
+{
+	print(num[3] " is equal to " num[1] "-" num[0])
+}
+//------------------------------will finish in morning, i need to watch tutorials

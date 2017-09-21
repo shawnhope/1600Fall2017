@@ -1,0 +1,17 @@
+While Loops
+loops until condition is satisfied or ended
+
+while(num > 10);
+{
+	num -= 1;
+}
+//------------------------------
+while(password = "word");
+{
+	print("right password, where are the club fees you owe?");
+}
+else
+{
+	print("can you even do an else clause in a while loop?");
+}
+//-------------------------------will finish in morning haaa woops
