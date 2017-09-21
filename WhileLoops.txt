@@ -1,11 +1,12 @@
 While Loops
 loops until condition is satisfied or ended
 
+//------------------------------------------
 while(num > 10);
 {
 	num -= 1;
 }
-//------------------------------
+//-------------------------------------------
 while(password = "word");
 {
 	print("right password, where are the club fees you owe?");
@@ -14,4 +15,87 @@ else
 {
 	print("can you even do an else clause in a while loop?");
 }
-//-------------------------------will finish in morning haaa woops
+//-------------------------------------------
+int num = 0;
+while (num < 7)
+{
+	print(num++);
+}
+//-------------------------------------------
+int maxInv = 4;
+int items;
+
+while(maxInv = items)
+{
+	items = 4;
+	print("inventory is full");
+}
+//--------------------------------------------
+int wait = 0;
+int min = 60;
+
+while (wait < min)
+{
+	print("aren't you a patient player, " min-- "seconds left.");
+}
+//---------------------------------------------
+int hwLeft = 5;
+
+while (hwLeft > 0)
+{
+	print(hwLeft--);
+}
+else
+{
+	print("done-zo ..finally");
+}
+//-----------------------------------------------
+int enemyHp = 20;
+
+while (enemyHp > 0)
+{
+	ememyHp--;
+}
+//----------------------------------------------
+int playerAtk = 10;
+int enemyAtk = 10;
+
+while (playerAtk == enemyAtk)
+{
+	nodamage; 
+	//or something
+}
+//------------------------------------------------
+int true = 1;
+int false = 1;
+
+while (true == false)
+{
+	print("what confusing identifiers..");
+}
+//------------------------------------------------
+int num;
+
+num = 5;
+
+while (num == 5)
+{
+	switch(num)
+	{
+	case 1:
+		num = 5;
+		break;
+	case 2:
+		num = 5;
+		break;
+	case 3:
+		num = 3;
+		break;
+	case 4:
+		num = 4;
+		break;
+	case 5:
+		num = 1;
+		break;
+	}
+}
