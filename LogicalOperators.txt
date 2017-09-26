@@ -1,0 +1,8 @@
+Logical Operators
+And, Or, Not
+
+if(num < 5 && num > 3)
+{
+	print("number is 4.. or 5 I guess technically");
+}
+//------------------------------------
