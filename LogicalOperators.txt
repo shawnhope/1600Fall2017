@@ -1,0 +1,72 @@
+Logical Operators
+And, Or, Not
+
+//-------------------------------------------1
+if(num < 5 && num > 3)
+{
+	print("Four sounds good");
+}
+//-------------------------------------------2
+while(num == 5 || 72)
+{
+	print("I don't know, I'm not good at this");
+}
+//-------------------------------------------3
+public string{} key = {"1", "2", "3"};
+if(key[1]+key[2]!key[3])
+{
+	print("I don't know anything except print..);
+}
+//-------------------------------------------4
+for(int x = 1; x != 0;)
+{
+	print("I promise once I have free time I'm gonna marathon tutorials..");
+}
+//-------------------------------------------5
+int x = 2;
+
+do
+{
+	print("hah.. when I have free time..");
+}
+while(x = 2 || 4);
+//-------------------------------------------6
+int num1 = 1;
+int num2 = 2;
+switch(num1 || num2)
+{
+case 1:
+	print("seriously though");
+	break;
+case 2:
+	print("it sucks not knowing anything else");
+	break;
+}
+//-------------------------------------------7
+num = 2;
+if(num !< 1)
+{
+	num++;
+}
+//-------------------------------------------8
+while(num == 4 || 8)
+{
+	num3--;
+}
+//-------------------------------------------9
+bool boolTrue = true;
+bool boolFalse = true;
+
+if(boolTrue && boolFalse)
+{
+	boolFalse = false;
+}
+else
+{
+	boolTrue = false;
+}
+//-------------------------------------------10
+if(myPhoneBattery == dead && isGarbage)
+{
+	throwItOutTheWindow = true;
+}
