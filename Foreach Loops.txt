@@ -1,0 +1,10 @@
+Foreach Loops
+calls each value in an array/string
+
+//---------------------------------------1
+string[] aBC = {'a', 'b', 'c'};
+
+foreach(char x in "aBC")
+	print(x + " ")
+
+//WILL ALSO FINISH IN MORNING IM SO WEAK, I'm also really just not sure on foreach's either so I'd like to look it up a bit more

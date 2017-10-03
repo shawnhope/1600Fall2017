@@ -1,0 +1,9 @@
+Lists
+Like arrays, but better, you don't have to know how many elements it will have ahead of time.
+
+//-------------------------------------------------1
+list<weapons>;
+{
+	weapons.add<>
+}
+//WILL FINISH IN MORNING I HAVE BEEN PASSING OUT ALL DAY
