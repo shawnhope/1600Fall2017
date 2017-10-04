@@ -8,6 +8,7 @@ public class AddThisToPlayer : MonoBehaviour {
 	public GameObject assetArt;
 
 	public GameObject MoreStuff;
+	
 	void OnTriggerEnter()
 	{
 		transform.parent = attachObject;

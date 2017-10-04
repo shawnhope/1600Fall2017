@@ -11,6 +11,8 @@ public class Whale : Mammal {
 
     void Beaches () {
         print(this.name + " Beaches");
+        furColor = Color.black;
+        BeardColor = Color.white;
     }
 
 }
