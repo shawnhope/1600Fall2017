@@ -1,0 +1,77 @@
+For loops
+ Usually used for counting up or down a specified amount
+
+//-------------------------------------------------1
+for(int x =0; x < 20; x++)
+{
+	print(x);
+	switch(x)
+		case 1:
+			print("i immediately change my mind about using a switch in an example i set to 20");
+			break;
+		default:
+			print("mistake");
+}
+//-------------------------------------------------2
+for(int i = 5; i > 0; i--)
+{
+	print(i + " seconds left!");
+}
+//-------------------------------------------------3
+int countDown = 5;
+
+for(int n = 3; n > 0; n--)
+{
+	print(x);
+	countDown--;
+}
+//-------------------------------------------------4
+string bugs = {"paul","ringo","george","john"};
+
+for(int i = 0; i < 4; i++)
+{
+	print(bugs[i]);
+}
+//-------------------------------------------------5
+int x = 3;
+
+while(x >= 0)
+	for(int i = 0; i < 4; i++)
+	{
+	print(x--)
+	}
+//-------------------------------------------------6
+if(health < 20 && poison == true){
+	for(int i = 10; i > 0; i--){
+		health--;
+		print(health);
+	}
+}
+//-------------------------------------------------7
+for(i = 0; i < 5;){
+	while(powerUpOn == true){
+		i--;
+	}
+	powerUpOn = false;
+}
+//-------------------------------------------------8
+for(i = 10; i > 0; i--){
+	if(i == 0){
+	HP == 0;
+	print("killed by Final Countdown");	
+	}
+}
+//-------------------------------------------------9
+for(i= 0; i<5; i++){
+	if(i ==3){
+	break;
+	}
+	print(i);
+}
+//-------------------------------------------------10
+for(i = 0; i < 10;){
+	if(i == 5){
+	print("oh no?");
+	}
+	print(i++);
+}
