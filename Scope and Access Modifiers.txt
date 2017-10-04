@@ -1,0 +1,34 @@
+Scope and Access Modifiers
+ Scope is more or less the syntax, each block of code is one more or less the scope of a variable. Variables in the field can be used throughout the script, variables in blocks only in the blocks. Access Modifiers are the public/private/protected, if its private, it can't be used outside the script, public can be called by other scripts, protected can be called by child scripts.
+
+//-----------------------------------------------
+//#1 public modifier needs to be stated
+//#2 x can be used in script and by other scripts
+public int x = 8;
+
+//#3 private method by default
+void start()
+{
+//#4 private access modifier by default
+//#5 y only exists in this Box method
+int y = 9;
+
+	if(x == 7)
+		print("x equals 7");
+	else if(x == 8)
+		//#6 prints because x is public, it can be accessed in method
+		print(y);
+	else if(x == 10)
+		//#7 won't print because z is not in this method block
+		print(z);
+	else
+		print("what");
+	
+	//#8 method private by default
+	void Box2(){
+		//#9 variable private by default (can it even be public?)
+		int z = 10;
+		//#10 prints x because x is public
+		print(x);
+	}
+}

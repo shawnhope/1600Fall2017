@@ -1,9 +1,12 @@
 Lists
-Like arrays, but better, you don't have to know how many elements it will have ahead of time.
+Like arrays, but better, you don't have to know how many elements it will have ahead of time. NEEDs namespace: using System.Collection.Generic
 
 //-------------------------------------------------1
-list<weapons>;
+List<int> weapons = new List<int>();
+
+void update()
+if (Input.GetKeyDown (KeyCode.Space))
 {
-	weapons.add<>
+	weapons.add();
 }
-//WILL FINISH IN MORNING I HAVE BEEN PASSING OUT ALL DAY
+//-------------------------------------------------2
