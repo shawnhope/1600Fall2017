@@ -4,19 +4,24 @@ using UnityEngine;
 
 public class Animal : MonoBehaviour {
 
+public string[] foxFood = {"Bananas", "Apples", "Grapes", "Chicken", "Turkey", "Cake"};
+public int[] foodCount = {10, 2, 30, 1, 2, 1};
+
 	// Use this for initialization
 	public virtual void Start () {
-			Die();
-			Eat();
+			
+			for(int i = 0; i < foxFood.Length; i++){
+				Eat(foxFood[i], foodCount[i]);
+			}
 			Sleep();
 	}
-		/*this is a comment for an assignment
-		this is a second line of a comment */
+
 	void Die () {
 		print(this.name + " Died");
 	}	
-	void Eat () {
-		print(this.name + " Eats");
+	void Eat (string food, int amount) {
+			print(this.name + " likes to eat " + food);		
+			print(this.name + " ate " + amount);
 	}
 	void Sleep () {
 		print(this.name + " Sleeps");
