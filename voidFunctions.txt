@@ -1,0 +1,76 @@
+Void Functions
+Functions that dont return a value
+
+public int[] santas = {"Dasher", "Dancer", "Prancer", "Vixen"};
+//1
+public virtual void Start(){
+	for(i = 0; i < santas.Length; i++){
+		Reindeer(santas[i]);
+	}
+}
+//2
+void Reindeer(int santas);{
+	if(santas == 0){
+		print("You know" + santas + ", and");
+	}
+	else if(santas <= 3 && santas != 0){
+		print(santas + ", and");
+	}
+	else{
+	print(" but do you recall--")
+	}
+}
+
+//3 idk maannn
+void Start();{
+	print("Started");
+}	
+
+
+public string[] weapons = {"Sword", "Shield", "Staff"};
+//4
+void Start(){
+	for(i=0; i < weapons.Length; i++){
+		if(weapons == 2){
+			print("Time's up, guess you're a boring mage now");
+		}
+		else{
+			print("Good choice, I guess.. I mean, it's no mage..");
+		}
+	}
+}
+
+//5
+void Start(){
+	if (Value == 3);{
+		print("at least I'm getting the hang of syntax I think with these?");
+	}
+	else{
+		break;
+	}
+}
+//6
+void Update(){
+	if(Input.GetKeyDown ("space")){
+		Value();
+	}
+}
+//7 shhshhhshhhh
+Value();{
+	return 3;
+}
+
+//8
+void Butts();{
+	print("need I say more?");
+}
+
+//9
+void Okay();{
+	print("I feel like I know voids well enough, it's basically all we've done");
+}
+
+//10
+void Start();{
+	print("I wanna know more about this virtual void nonsence or other function types);
+}
