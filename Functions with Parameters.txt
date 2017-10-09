@@ -1,0 +1,82 @@
+Functions with Parameters
+	functions that return things and or have parameters, sounds handy.
+
+//1 void function that calls a return
+Start(){
+	if(Int() == 1){
+		print("whoa what");
+	}
+}
+
+//2 returns a 1
+int Int(){
+	return 1;
+}
+
+
+public int health;
+
+//3 calls fuction
+Fight(){
+	if(Attacked() == false){
+	print("still unnoticed");
+	}
+}
+
+
+//4 returns false
+bool Attacked(){
+	if(gameObject.Enemy == alerted){
+	return true;
+	}
+	else{
+		return false;
+	}
+}
+
+
+//5 from in class
+ void Start () { 
+    myScore = ReturnNum(health, ammo);  
+  } 
+   
+  public int myScore; 
+ 
+  public int health; 
+  public int ammo; 
+
+ //6 returns added value
+  int ReturnNum(int _num, int _num2) { 
+    return _num + _num2; 
+  }
+
+
+//7 from in class
+Start(){
+	myPassword = ReturnPassword(myPassword);
+}
+public string myPassword = "CoolStuff";
+//8
+string ReturnPassword(string _login){
+	if(_login == "ou812"){
+		return "Password Correct";
+	}
+	else{
+	return "Incorrect";
+	}
+} 
+
+
+//9
+Start(){
+	remainingHealth = Health(health, damage);
+}
+
+public int health = 20;
+public int damage = 5;
+int remainingHealth;
+
+//10 returns remainingHealth's value
+int Health(int _num, int _num2){
+	return int _num - _num2;
+}
