@@ -10,9 +10,9 @@ public class NavMeshAI : MonoBehaviour {
 
 //gets location of public player variable
 public Transform player;
-
 //put camera in agent public variable, its the agent
 public NavMeshAgent agent;
+
 	void Update () {
 		//agent(cam)'s destination becomes the player's position
 		agent.destination = player.position;
