@@ -7,7 +7,7 @@ public class UIBar : MonoBehaviour {
 
 //Image is found in .UI
 public Image bar;
-public float barTime = 0.1f;
+public GameObject gameOverUI;
 public float powerLevel = 0.1f;
 public float amountToAdd = 0.1f;
 
@@ -33,25 +33,39 @@ public PowerUpType powerUp;
 	//a coroutine..ok? (lets you repeat something) has to yield to cycle through. it stops once its true
 	IEnumerator PowerUpBar ()
 	{
-		while(bar.fillAmount < 1)
+		float tempAmount = bar.fillAmount + powerLevel;
+		if(tempAmount > 1)
+		{
+			tempAmount = 1;
+		}
+		while(bar.fillAmount < tempAmount)
 		{
 			bar.fillAmount += amountToAdd;
 
 			//takes one barTime then waits second
-			yield return new WaitForSeconds(barTime);
+			yield return new WaitForSeconds(amountToAdd);
 		}
 	}
 
-	IEnumerator PowerDownBar()
+	IEnumerator PowerDownBar ()
 	{
-		float tempAmount = powerLevel;
-		float fillAmount = bar.fillAmount;
-		while (tempAmount > 0)
+		float tempAmount = bar.fillAmount - powerLevel;
+		if(tempAmount < 0)
 		{
-			bar.fillAmount = tempAmount - amountToAdd;
-			bar.fillAmount = fillAmount;
-			
-			yield return new WaitForSeconds(barTime);
+			tempAmount = 0;
+		}
+		while(bar.fillAmount > tempAmount)
+		{
+			bar.fillAmount -= amountToAdd;
+
+			//takes one barTime then waits second
+			yield return new WaitForSeconds(amountToAdd);
+		}
+		
+		if(bar.fillAmount == 0)
+		{
+			gameOverUI.SetActive(true);
+			CharacterControl.gameOver = true;
 		}
 	}
 }
