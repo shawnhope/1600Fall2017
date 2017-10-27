@@ -20,8 +20,9 @@ public class CharacterControl : MonoBehaviour {
 				//ifGrounded && space is PRESSED, y coordinate == jumpForce var.
 				moveVector3.y = jumpForce * Time.deltaTime;
 			}
-			//ifGrounded x coordinates move in 'horizontal' directions *speed var.
+			//ifGrounded x/y coordinates move in 'horizontal/vertical' directions *speed var.
 			moveVector3.x = Input.GetAxis ("Horizontal") * speed * Time.deltaTime;
+			moveVector3.z = Input.GetAxis ("Vertical") * speed * Time.deltaTime;
 		} else {
 			//turns gravity back on while notGrounded
 			gravity = 9.81f;
