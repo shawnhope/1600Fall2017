@@ -7,13 +7,17 @@ public class UIBar : MonoBehaviour {
 
 //Image is found in .UI
 public Image bar;
+public Text coinNum;
+public int totalCoinValue;
+public int coinValue = 10;
 public GameObject gameOverUI;
 public float powerLevel = 0.1f;
 public float amountToAdd = 0.1f;
 
 public enum PowerUpType{
 	PowerUp, 
-	PowerDown
+	PowerDown,
+	CollectCoin
 }
 public PowerUpType powerUp;
 
@@ -24,12 +28,27 @@ public PowerUpType powerUp;
 				//starts the coroutine
 				StartCoroutine(PowerUpBar());
 			break;
-				case PowerUpType.PowerDown:
+			case PowerUpType.PowerDown:
 				StartCoroutine(PowerDownBar());
+			break;
+			case PowerUpType.CollectCoin:
+				//start the coroutine "CollectCoin"
+				StartCoroutine(CollectCoin());
 			break;
 		}
 	}
 	
+IEnumerator CollectCoin (){
+
+	totalCoinValue = int.Parse(coinNum.text);
+	int tempAmount = totalCoinValue + coinValue;
+	while(totalCoinValue <= tempAmount)
+	{
+		coinNum.text = (totalCoinValue++).ToString();
+		yield return new WaitForFixedUpdate();
+	}
+}
+
 	//a coroutine..ok? (lets you repeat something) has to yield to cycle through. it stops once its true
 	IEnumerator PowerUpBar ()
 	{
