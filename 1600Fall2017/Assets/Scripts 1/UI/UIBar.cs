@@ -7,6 +7,7 @@ public class UIBar : MonoBehaviour {
 
 //Image is found in .UI
 public Image bar;
+public Text endGameText;
 public Text coinNum;
 public int totalCoinValue;
 public int coinValue = 10;
@@ -17,7 +18,8 @@ public float amountToAdd = 0.1f;
 public enum PowerUpType{
 	PowerUp, 
 	PowerDown,
-	CollectCoin
+	CollectCoin,
+	Win
 }
 public PowerUpType powerUp;
 
@@ -34,6 +36,9 @@ public PowerUpType powerUp;
 			case PowerUpType.CollectCoin:
 				//start the coroutine "CollectCoin"
 				StartCoroutine(CollectCoin());
+			break;
+			case PowerUpType.Win:
+				EndGame("You Win!");
 			break;
 		}
 	}
@@ -83,8 +88,13 @@ IEnumerator CollectCoin (){
 		
 		if(bar.fillAmount == 0)
 		{
-			gameOverUI.SetActive(true);
-			CharacterControl.gameOver = true;
+			EndGame("Game Over");
 		}
+	}
+
+	void EndGame(string _text){
+		endGameText.text = _text;
+		gameOverUI.SetActive(true);
+		CharacterControl.gameOver = true;
 	}
 }
