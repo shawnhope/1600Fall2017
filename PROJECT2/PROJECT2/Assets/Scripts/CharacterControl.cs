@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterControl : MonoBehaviour {
-
+	public Transform camNorth;
 	public CharacterController characterControl;
 	public float speed = 15f, gravity = 9.81f, jumpForce = 50f;
 	public Vector3 moveVector3;
@@ -17,8 +17,17 @@ public class CharacterControl : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.Space)) {
 				moveVector3.y = jumpForce * Time.deltaTime;
 			}
+
+			//trial camera-relative movement:
+			/*if (Input.GetKey(KeyCode.W)){
+				transform.position = Vector3.MoveTowards (transform.position, camNorth.position, speed*Time.deltaTime);
+			}
+			if (Input.GetKey(KeyCode.S)){
+				transform.position = Vector3.MoveTowards (transform.position, camNorth.position, -25*Time.deltaTime);
+			}*/
+
 			moveVector3.x = Input.GetAxis ("Horizontal") * speed * Time.deltaTime;
 		} 
-		characterControl.Move (moveVector3);
+		characterControl.Move(moveVector3);
 	}
 }
