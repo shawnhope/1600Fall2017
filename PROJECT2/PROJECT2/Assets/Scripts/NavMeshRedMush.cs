@@ -9,6 +9,8 @@ public Transform player;
 public NavMeshAgent redMush;
 
 	void Update(){
-		redMush.destination = -player.position;
+		var destination = player.transform.position;
+		//redMush.destination = -player.position;
+		redMush.destination = -destination;
 		}
 }
