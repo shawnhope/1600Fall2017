@@ -11,7 +11,7 @@ public enum CollisionThing{
 }
 public CollisionThing colThing;
 
-	void  OnCollisionEnter()
+	void  OnTriggerEnter()
 	{
 		switch(colThing){
 			case CollisionThing.Block:
