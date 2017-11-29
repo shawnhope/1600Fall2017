@@ -9,8 +9,8 @@ public class Powers : MonoBehaviour {
 		RedMush,
 		HPDown,
 	}
-	//plug in for powerObj
-	public PowerType power;
+
+	public PowerType power;		//plug in for powerObj
 
 	void OnTriggerEnter(){
 		switch (power) {

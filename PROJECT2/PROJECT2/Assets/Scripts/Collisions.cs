@@ -15,7 +15,7 @@ public CollisionThing colThing;
 	{
 		switch(colThing){
 			case CollisionThing.Block:
-			Instantiate(RedMush, spawnpoint);
+			Instantiate(RedMush, spawnpoint.position, spawnpoint.rotation);
 			break;
 		}
 	}
