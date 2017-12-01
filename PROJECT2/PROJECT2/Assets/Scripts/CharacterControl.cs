@@ -6,7 +6,7 @@ public class CharacterControl : MonoBehaviour {
 
 	public CharacterController characterControl;
 	public float speed = 15f, gravity = 9.81f, jumpForce = 50f;
-	public Vector3 moveVector3;
+	public static Vector3 moveVector3;
 
 	void Update () {
 		if (!characterControl.isGrounded) {
