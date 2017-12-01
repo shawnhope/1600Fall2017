@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterControl : MonoBehaviour {
 
 	public CharacterController characterControl;
-	public float speed = 15f, gravity = 9.81f, jumpForce = 50f;
+	public float speed = 20f, gravity = 9.81f, jumpForce = 60f;
 	public static Vector3 moveVector3;
 
 	void Update () {

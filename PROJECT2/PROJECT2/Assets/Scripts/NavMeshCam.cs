@@ -9,6 +9,7 @@ public Transform player;
 public NavMeshAgent agent;
 
 	void Update () {
-		agent.destination = player.position;
+			agent.destination = player.position;
+		}
 	}
-}
+
