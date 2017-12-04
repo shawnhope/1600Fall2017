@@ -4,22 +4,11 @@ using UnityEngine;
 using UnityEngine.AI;
 public class EnemyPatrol : MonoBehaviour {
 
-public NavMeshAgent enemy;
-public Transform[] patrolPoint;
-	private int waypoint=0;
-
+public Transform patrolPoint;
 	void OnTriggerEnter(){
-		if (waypoint == 0) {
-			waypoint = 1;
-		} 
-		else if (waypoint == 1) {
-			waypoint = 0;
-		}
+	enemyNav.destination = patrolPoint;  //grabs enemy.nav destination var to make patrolPoint
 	}
 
-	void Update (){
-		enemy.destination = patrolPoint [waypoint].position;
-	}
 
 	/*void Update(){
 		enemy.destination = patrolPoint [waypoint].position;
