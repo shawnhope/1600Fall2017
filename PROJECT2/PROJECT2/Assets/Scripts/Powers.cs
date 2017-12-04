@@ -12,14 +12,22 @@ public class Powers : MonoBehaviour {
 
 	public PowerType power;					//plug in for powerObj
 
-	void OnTriggerEnter(){
-		switch (power) {					//looks for which power is selected
-		case PowerType.RedMush:
-			StartCoroutine(RedMush());
-			break;
-		case PowerType.HPDown:
-			StartCoroutine (HPDown());
-			break;
+	void OnTriggerEnter(Collider _col){
+
+
+		//////////////////////////////figure this OUT
+		/// 
+		/// 
+		/// VVVV
+		if(_col = player.GetComponent( )){	
+			switch (power) {				//looks for which power is selected
+			case PowerType.RedMush:
+				StartCoroutine (RedMush ());
+				break;
+			case PowerType.HPDown:
+				StartCoroutine (HPDown ());
+				break;
+			}
 		}
 	}
 
