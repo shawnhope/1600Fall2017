@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Collisions : MonoBehaviour {
 
-public GameObject RedMush, Enemy;
+public GameObject Enemy, RedMush;
 public Transform spawnpoint;
 public enum CollisionThing{
 	Block,
-	Stomp
+	Stomp,
 }
 public CollisionThing colThing;
 

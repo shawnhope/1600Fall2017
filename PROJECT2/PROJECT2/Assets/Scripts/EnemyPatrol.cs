@@ -4,19 +4,33 @@ using UnityEngine;
 using UnityEngine.AI;
 public class EnemyPatrol : MonoBehaviour {
 
-public GameObject[] points;
 public NavMeshAgent enemy;
-public Transform patrolPoint;
+public Transform[] patrolPoint;
+	private int waypoint=0;
 
-void Start(){
-	//need to find a way to make the transform the array :/
-	patrolPoint = points;
-}
-void Update()
-{
-	foreach(GameObject GameObject in points){
-	enemy.destination = patrolPoint.position; 
+	void OnTriggerEnter(){
+		if (waypoint == 0) {
+			waypoint = 1;
+		} 
+		else if (waypoint == 1) {
+			waypoint = 0;
+		}
 	}
-}
+
+	void Update (){
+		enemy.destination = patrolPoint [waypoint].position;
+	}
+
+	/*void Update(){
+		enemy.destination = patrolPoint [waypoint].position;
+
+		foreach(Transform warp in patrolPoint){
+			enemy.destination = patrolPoint[waypoint].transform.position; 
+		}
+		for(waypoint = 0; waypoint <= 0; waypoint++){
+			enemy.destination = patrolPoint[waypoint].transform.position; 
+			waypoint--;
+		}
+	}*/
 
 }
