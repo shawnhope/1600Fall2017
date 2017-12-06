@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Powers : MonoBehaviour {
+	
 	public GameObject player;
 	public static bool twranched = false;
 	public enum PowerType{
@@ -12,14 +13,9 @@ public class Powers : MonoBehaviour {
 
 	public PowerType power;					//plug in for powerObj
 
-	void OnTriggerEnter(Collider _col){
+	void OnTriggerEnter(Collider other){
 
-
-		//////////////////////////////figure this OUT
-		/// 
-		/// 
-		/// VVVV
-		if(_col = player.GetComponent( )){	
+		if(other.isTrigger == false){	
 			switch (power) {				//looks for which power is selected
 			case PowerType.RedMush:
 				StartCoroutine (RedMush ());

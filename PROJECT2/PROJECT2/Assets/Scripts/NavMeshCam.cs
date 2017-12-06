@@ -5,8 +5,8 @@ using UnityEngine.AI;
 
 public class NavMeshCam : MonoBehaviour {
 
-public Transform player;
-public NavMeshAgent agent;
+	public Transform player;
+	public NavMeshAgent agent;
 
 	void Update () {
 			agent.destination = player.position;

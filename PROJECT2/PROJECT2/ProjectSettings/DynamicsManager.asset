@@ -14,5 +14,6 @@ PhysicsManager:
   m_QueriesHitBackfaces: 0
   m_QueriesHitTriggers: 1
   m_EnableAdaptiveForce: 0
-  m_EnablePCM: 1
+  m_EnablePCM: 0
   m_LayerCollisionMatrix: c99ffdffc897fcffc897fcffffffffffc897fcffc897fcffffffffffffffffffffffffffffffffffffffffffc9b7ffffffffffffc8dffdffc8b7fcffffffffffc9bffdffc89ffcffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+  m_AutoSimulation: 1

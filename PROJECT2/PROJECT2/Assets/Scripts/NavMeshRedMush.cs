@@ -5,8 +5,8 @@ using UnityEngine.AI;
 
 public class NavMeshRedMush : MonoBehaviour {
 
-public Transform player;
-public NavMeshAgent redMush;
+	public Transform player;
+	public NavMeshAgent redMush;
 
 	void Update(){
 		var destination = player.transform.position;

@@ -4,13 +4,17 @@ using UnityEngine;
 using UnityEngine.AI;
 public class EnemyPatrol : MonoBehaviour {
 
-public Transform patrolPoint;
-	void OnTriggerEnter(){
-	enemyNav.destination = patrolPoint;  //grabs enemy.nav destination var to make patrolPoint
+	public Transform patrolPoint;
+
+	void OnTriggerEnter(Collider other){
+		if(other.gameObject.name != "player"){
+			enemyNav.destination = patrolPoint;  //grabs enemy.nav destination var to make patrolPoint
+		}
 	}
 
 
-	/*void Update(){
+	/* //failed attempts to make patrol with an array and loops
+	 void Update(){
 		enemy.destination = patrolPoint [waypoint].position;
 
 		foreach(Transform warp in patrolPoint){

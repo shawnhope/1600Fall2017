@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class Collisions : MonoBehaviour {
 
-public GameObject Enemy, RedMush;
-public Transform spawnpoint;
-public enum CollisionThing{
-	Block,
-	Stomp,
-}
-public CollisionThing colThing;
+	public GameObject Enemy, RedMush;
+	public Transform spawnpoint;
+	public enum CollisionThing{
+		Block,
+		Stomp,
+	}
+	public CollisionThing colThing;
 
-	void  OnTriggerEnter()
-	{
-		switch (colThing) {
+	void  OnTriggerEnter(){
+		switch (colThing){
 		case CollisionThing.Block:
 			Instantiate (RedMush, spawnpoint.position, spawnpoint.rotation);
 			break;
 		case CollisionThing.Stomp:
 			GameObject.Destroy (Enemy);
-			CharacterControl.moveVector3.y = 50 * Time.deltaTime;
+			CharacterControl.moveVector3.y = 60 * Time.deltaTime;
 			break;
 		}
 	}
