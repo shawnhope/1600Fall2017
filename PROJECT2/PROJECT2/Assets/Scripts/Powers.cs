@@ -7,7 +7,7 @@ public class Powers : MonoBehaviour {
 
 	public int totalCoinValue, coinValue = 1;
 	public Text coinNum;
-	public GameObject player;
+	public GameObject player, GameOverUI;
 	public static bool twranched = false;
 	public enum PowerType{
 		RedMush,
@@ -48,11 +48,12 @@ public class Powers : MonoBehaviour {
 	IEnumerator HPDown (){					//if HPDown is selected:
 		if(twranched == true){				//check see if twranched
 			//>>>>>>>ADD == if twranched, restart position at levelstart or checkpoint, lose life
-		//	RestartGame.GameOverUI.SetActive(true);
+		GameOverUI.SetActive(true);
 		}
 		else if (twranched == false){		//if not twranched, twranch and changes state
 			//>>>>>>>ADD == find way to make it wait before it can hit again so no immediate death on contact
-			player.transform.localScale += new Vector3 (0, -.4f);
+			player.transform.localScale += new Vector3 (0, -.2f);
+			yield return new WaitForSeconds(.5f);
 			twranched = true;
 		}	
 		yield return new WaitForFixedUpdate ();
@@ -63,7 +64,6 @@ public class Powers : MonoBehaviour {
 	 	while(totalCoinValue <= tempAmount){ 				//while totalCoins is less/equal storageVar,
 		 	coinNum.text = (totalCoinValue++).ToString(); 	//UI totalText visually changes by one upwards til total equals storageVar
 		 	yield return new WaitForFixedUpdate(); 
-		} 
-		
+		}	
 	}
 }
