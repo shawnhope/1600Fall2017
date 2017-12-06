@@ -296,7 +296,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c960c00dcbcc8484eb9fe1c11c7908e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstdestination: {fileID: 0}
+  firstdestination: {fileID: 4743351874927016, guid: 7a3af5f2c2c38234abadb00ce40a2f4c,
+    type: 2}
   agent: {fileID: 195735841672548672}
 --- !u!114 &114435036180335748
 MonoBehaviour:
@@ -309,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18bdede9c3ef8874791b9739505ff522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1689346438088328, guid: a220a5a5f62bfbb41b1cd7b82ce5cf9a, type: 2}
+  player: {fileID: 0}
   power: 1
 --- !u!114 &114773071908154410
 MonoBehaviour:

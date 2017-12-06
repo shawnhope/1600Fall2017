@@ -19,7 +19,7 @@ public class Collisions : MonoBehaviour {
 			break;
 		case CollisionThing.Stomp:
 			GameObject.Destroy (Enemy);
-			CharacterControl.moveVector3.y = 60 * Time.deltaTime;
+			CharacterControl.moveVector3.y = 50 * Time.deltaTime;
 			break;
 		}
 	}
