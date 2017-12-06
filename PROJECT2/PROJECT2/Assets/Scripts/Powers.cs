@@ -12,7 +12,7 @@ public class Powers : MonoBehaviour {
 	public enum PowerType{
 		RedMush,
 		HPDown,
-		Coin
+		Coin,
 	}
 
 	public PowerType power;					//plug in for powerObj

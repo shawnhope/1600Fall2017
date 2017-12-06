@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour {
 
-	void OnTriggerEnter(){
+	void OnTriggerEnter(Collider other){
 		print ("triggerhit");
 		RestartGame.startPos = transform.position;
 	}
