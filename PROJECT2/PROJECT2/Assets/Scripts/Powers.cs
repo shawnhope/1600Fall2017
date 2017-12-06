@@ -12,7 +12,7 @@ public class Powers : MonoBehaviour {
 	public enum PowerType{
 		RedMush,
 		HPDown,
-		Coin,
+		Coin
 	}
 
 	public PowerType power;					//plug in for powerObj
@@ -48,6 +48,7 @@ public class Powers : MonoBehaviour {
 	IEnumerator HPDown (){					//if HPDown is selected:
 		if(twranched == true){				//check see if twranched
 			//>>>>>>>ADD == if twranched, restart position at levelstart or checkpoint, lose life
+		//	RestartGame.GameOverUI.SetActive(true);
 		}
 		else if (twranched == false){		//if not twranched, twranch and changes state
 			//>>>>>>>ADD == find way to make it wait before it can hit again so no immediate death on contact
