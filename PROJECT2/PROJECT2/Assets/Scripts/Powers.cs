@@ -53,7 +53,7 @@ public class Powers : MonoBehaviour {
 		else if (twranched == false){		//if not twranched, twranch and changes state
 			//>>>>>>>ADD == find way to make it wait before it can hit again so no immediate death on contact
 			player.transform.localScale += new Vector3 (0, -.2f);
-			yield return new WaitForSeconds(.5f);
+			yield return new WaitForSeconds(.5f);  //bug: probability of killing enemy before twranch can change to true
 			twranched = true;
 		}	
 		yield return new WaitForFixedUpdate ();
@@ -64,6 +64,6 @@ public class Powers : MonoBehaviour {
 	 	while(totalCoinValue <= tempAmount){ 				//while totalCoins is less/equal storageVar,
 		 	coinNum.text = (totalCoinValue++).ToString(); 	//UI totalText visually changes by one upwards til total equals storageVar
 		 	yield return new WaitForFixedUpdate(); 
-		}	
+		 }
 	}
 }
