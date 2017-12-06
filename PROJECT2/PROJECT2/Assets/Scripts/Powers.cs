@@ -8,7 +8,7 @@ public class Powers : MonoBehaviour {
 	public int totalCoinValue, coinValue = 1;
 	public Text coinNum;
 	public GameObject player;
-	public static bool twranched = true;
+	public static bool twranched = false;
 	public enum PowerType{
 		RedMush,
 		HPDown,
