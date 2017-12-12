@@ -7,13 +7,17 @@ public class CharacterControl : MonoBehaviour {
 	public CharacterController characterControl;
 	public float speed = 20f, gravity = 9.81f, jumpForce = 60f;
 	public static Vector3 moveVector3;
+	public static bool gameOver;
 
 	void Update () {
+		if (gameOver) {
+			moveVector3.x = 0f;
+		}
 		if (!characterControl.isGrounded) {
 			//when not grounded, V3.y = (downward)gravity
 			moveVector3.y -= gravity * Time.deltaTime;
 		}
-		if (characterControl.isGrounded) {
+		if (characterControl.isGrounded && !gameOver) {
 			if (Input.GetKeyDown (KeyCode.Space)) {
 				moveVector3.y = jumpForce * Time.deltaTime;
 			}

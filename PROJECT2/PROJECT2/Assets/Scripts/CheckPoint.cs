@@ -5,8 +5,8 @@ using UnityEngine;
 public class CheckPoint : MonoBehaviour {
 
 	void OnTriggerEnter(){
-		print ("triggerhit");
-		RestartGame.startPos = transform.position;
+		print ("Check Point!");
+		RestartGame.playerStartPos = transform.position;  //makes checkpoint the reference of restartgame's playerStartPos
 	}
 
 }

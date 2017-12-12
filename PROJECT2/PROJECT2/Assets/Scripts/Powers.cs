@@ -9,10 +9,12 @@ public class Powers : MonoBehaviour {
 	public Text coinNum;
 	public GameObject player, GameOverUI;
 	public static bool twranched = false;
+	public static bool expended;
 	public enum PowerType{
 		RedMush,
 		HPDown,
-		Coin
+		Coin,
+		InstaDeath
 	}
 
 	public PowerType power;					//plug in for powerObj
@@ -30,6 +32,9 @@ public class Powers : MonoBehaviour {
 			case PowerType.Coin:
 				StartCoroutine (Coin ());
 				break;
+			case PowerType.InstaDeath:
+				StartCoroutine (InstaDeath ());
+				break;
 			}
 		}
 	}
@@ -46,9 +51,11 @@ public class Powers : MonoBehaviour {
 		yield return new WaitForFixedUpdate ();
 	}
 	IEnumerator HPDown (){					//if HPDown is selected:
+		expended = false;
 		if(twranched == true){				//check see if twranched
 			//>>>>>>>ADD == if twranched, restart position at levelstart or checkpoint, lose life
-		GameOverUI.SetActive(true);
+			GameOverUI.SetActive(true);
+			CharacterControl.gameOver = true;
 		}
 		else if (twranched == false){		//if not twranched, twranch and changes state
 			//>>>>>>>ADD == find way to make it wait before it can hit again so no immediate death on contact
@@ -65,5 +72,10 @@ public class Powers : MonoBehaviour {
 		 	coinNum.text = (totalCoinValue++).ToString(); 	//UI totalText visually changes by one upwards til total equals storageVar
 		 	yield return new WaitForFixedUpdate(); 
 		 }
+	}
+	IEnumerator InstaDeath(){
+		GameOverUI.SetActive (true);
+		CharacterControl.gameOver = true;
+		yield return new WaitForFixedUpdate ();
 	}
 }
