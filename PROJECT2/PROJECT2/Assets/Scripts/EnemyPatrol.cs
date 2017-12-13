@@ -7,7 +7,7 @@ public class EnemyPatrol : MonoBehaviour {
 	public Transform patrolPoint;
 
 	void OnTriggerEnter(Collider other){
-		if(other.gameObject.name != "player"){
+		if(other.gameObject.name != "player"){		//makes sure player hitting them doesn't trigger destination change
 			enemyNav.destination = patrolPoint;  //grabs enemy.nav destination var to make patrolPoint
 		}
 	}

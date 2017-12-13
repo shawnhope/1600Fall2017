@@ -6,6 +6,7 @@ public class RestartGame : MonoBehaviour {
 
 	public Transform respawnPoint;				//obj'sSpawnPosition duh
 	public static Vector3 playerStartPos;			//player's v3 coord. doi
+	public GameObject[] expended;					//array for enemies
 	public GameObject GameOverUI;
 
 	void Awake(){
@@ -17,5 +18,8 @@ public class RestartGame : MonoBehaviour {
 		respawnPoint.position = playerStartPos;
 		GameOverUI.SetActive(false);
 		CharacterControl.gameOver = false;
+		for(int i = 0; i < expended.Length; i++){	//turns on enemies in array on ingame reset
+			expended [i].SetActive (true);
 			}
 		}
+	}

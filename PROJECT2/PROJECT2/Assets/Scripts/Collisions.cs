@@ -18,7 +18,8 @@ public class Collisions : MonoBehaviour {
 			Instantiate (RedMush, spawnpoint.position, spawnpoint.rotation);
 			break;
 		case CollisionThing.Stomp:
-			GameObject.Destroy (Enemy);
+			Enemy.SetActive (false);		//works
+			//GameObject.Destroy (Enemy);  //was eh
 			CharacterControl.moveVector3.y = 50 * Time.deltaTime;
 			break;
 		}
