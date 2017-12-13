@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Collisions : MonoBehaviour {
 
-	public GameObject Enemy, RedMush;
+	public GameObject Enemy, RedMush, itemBlock, normBlock;
 	public Transform spawnpoint;
 	public enum CollisionThing{
 		Block,
@@ -16,13 +16,13 @@ public class Collisions : MonoBehaviour {
 		switch (colThing){
 		case CollisionThing.Block:
 			Instantiate (RedMush, spawnpoint.position, spawnpoint.rotation);
-			print ("mushrooming");
+			itemBlock.SetActive (false);
+			normBlock.SetActive (true);
 			break;
 		case CollisionThing.Stomp:
 			Enemy.SetActive (false);		//works
-			//GameObject.Destroy (Enemy);  //was eh
+			//GameObject.Destroy (Enemy);  //used to have; it was eh
 			CharacterControl.moveVector3.y = 50 * Time.deltaTime;
-			print ("stomping");
 			break;
 		}
 	}
