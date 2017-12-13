@@ -17,5 +17,10 @@ public class BulletAgent : MonoBehaviour {
 			bill.transform.position = spawn.transform.position;
 		} 
 	}
+	void OnTriggerEnter(Collider other){
+		if (other.isTrigger == true) {
+				bill.transform.position = spawn.transform.position;
+		}
+	}
 }
 
