@@ -30,7 +30,7 @@ public class RestartGame : MonoBehaviour {
 			usedblock.SetActive(false);
 		}
 		foreach (GameObject usedUps in useditems) {
-				usedUps.SetActive (true);
+			usedUps.SetActive (true);
 			}
 		}
 	/*void Update(){											//was going to have enemies defeated give points toward score in an array
