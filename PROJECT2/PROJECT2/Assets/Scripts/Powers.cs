@@ -9,7 +9,6 @@ public class Powers : MonoBehaviour {
 	public Text coinNum;
 	public GameObject player, GameOverUI;
 	public static bool twranched = false;
-	public static bool expended;
 	public enum PowerType{
 		RedMush,
 		HPDown,
@@ -51,7 +50,6 @@ public class Powers : MonoBehaviour {
 		yield return new WaitForFixedUpdate ();
 	}
 	IEnumerator HPDown (){					//if HPDown is selected:
-		expended = false;
 		if(twranched == true){				//check see if twranched
 			//>>>>>>>ADD == if twranched, restart position at levelstart or checkpoint, lose life
 			GameOverUI.SetActive(true);

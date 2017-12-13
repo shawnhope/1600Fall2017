@@ -242,7 +242,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 8
   m_CollisionDetection: 0
 --- !u!54 &54364282360457058
 Rigidbody:
@@ -313,7 +313,7 @@ MonoBehaviour:
   totalCoinValue: 0
   coinValue: 1
   coinNum: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 1689346438088328, guid: a220a5a5f62bfbb41b1cd7b82ce5cf9a, type: 2}
   GameOverUI: {fileID: 0}
   power: 1
 --- !u!114 &114773071908154410

@@ -20,7 +20,6 @@ public class Collisions : MonoBehaviour {
 		case CollisionThing.Stomp:
 			GameObject.Destroy (Enemy);
 			CharacterControl.moveVector3.y = 50 * Time.deltaTime;
-			Powers.expended = true;
 			break;
 		}
 	}
